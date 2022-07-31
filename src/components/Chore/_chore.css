@@ -1,0 +1,16 @@
+@layer components {
+
+  .chore-container {
+    @apply px-[.625rem] py-[.3125rem] rounded-[.625rem] font-medium text-xs leading-[.9375rem] duration-300 ring-[.0625rem] ring-transparent;
+
+    &.primary {
+      @apply bg-primary-500 text-secondary-500 enabled:hover:ring-secondary-500 ;
+    }
+    &.secondary {
+      @apply bg-secondary-500 text-primary-500 enabled:hover:ring-primary-500 ;
+    }
+    &.outline {
+      @apply enabled:hover:bg-secondary-500/50 text-primary-500 ring-primary-500 ;
+    }
+  }
+}
